@@ -26,7 +26,17 @@
 					<li>Research</li>
 					<li><a href="https://theprototypers.de/">Hire</a></li>
 					<li>Contact</li>
+					@if (Auth::guest())
+					<li><a href="{{ route('login') }}">Login</a></li>
+					@endif
+					<li>
+						<form action="{{ route('logout') }}" method="post">
+							@csrf
+							<button>{{ Auth::user()->email ?? '' }}</button>
+						</form>
+					</li>
 				</ul>
+				@includeWhen(Auth::user(), 'layouts._admin_menu')
 			</div>
 		</nav>
 	</header>
