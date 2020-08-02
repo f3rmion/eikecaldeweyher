@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
+use App\Category;
+use App\Tag;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+		$posts = Post::count();
+		$categories = Category::count();
+		$tags = Tag::count();
+        return view('home', get_defined_vars());
     }
 }
