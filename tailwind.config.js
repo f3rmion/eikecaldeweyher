@@ -1,8 +1,12 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+	fontFamily: { sans: ['Inter var'] },
+	},
   },
   variants: {},
-  plugins: [],
+  plugins: [
+	require('@tailwindcss/ui'),
+  ],
 }
