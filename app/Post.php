@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\User;
+use App\Tag;
 use App\Category;
 use Illuminate\Database\Eloquent\Model;
 
@@ -18,4 +20,14 @@ class Post extends Model
 	{
 		return $this->belongsTo(Category::class);
 	}	
+
+	public function user()
+	{
+		return $this->belongsTo(User::class);
+	}
+
+	public function tags()
+	{
+		return $this->belongsToMany(Tag::class);
+	}
 }

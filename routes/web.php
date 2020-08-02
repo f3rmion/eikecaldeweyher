@@ -9,5 +9,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/posts/create', 'PostsController@create')->name('post.create');
+Route::group(['middleware' => 'auth'], function() {
+	Route::get('/home', 'HomeController@index')->name('home');
+	Route::get('/posts', 'PostsController@index')->name('posts.index');
+	Route::get('/posts/create', 'PostsController@create')->name('posts.create');
+});
