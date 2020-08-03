@@ -60,10 +60,10 @@
 				  {{ ($post->is_published == true) ? 'Yes' : 'No' }}
 				</td>
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium">
-				  <a href="{{ route('posts.edit', $post) }}" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+				  <a href="{{ route('posts.edit', $post) }}" class="font-normal text-indigo-600 hover:text-indigo-900">Edit</a>
 				  <form method="POST" action="{{ route('posts.publish', $post) }}">
 					@csrf
-					<button type="submit" class="text-medium text-indigo-600 hover:text-indigo-900">
+					<button type="submit" class="text-indigo-600 hover:text-indigo-900">
 					@if (!$post->is_published) 
 						Publish
 					@else

@@ -1,5 +1,4 @@
 @props([
-	'type' => 'textarea',
     'title',
     'name',
     'placeholder' => '',
@@ -8,14 +7,12 @@
 ])
 <div {{ $attributes }}>
 	<label for="{{ $name }}" class="block text-sm font-medium leading-5 text-gray-700">{{ $title }}</label>
-	<input 
-		type="{{ $type }}"
+	<textarea 
 		id="{{ $name }}"
 		name="{{ $name }}" 
 		placeholer="{{ $placeholder }}"
-		value="{{ old($name, $value) }}"
-		rows="3" 
-		class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+		rows="5" 
+		class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">{{ old($name, $value) }}</textarea>
     @if($helptext)
         <p class="mt-2 text-sm text-gray-500">
             {{ $helptext }}
