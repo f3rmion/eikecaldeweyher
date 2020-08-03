@@ -85,6 +85,12 @@ class PostsController extends Controller
 	{
 		$post->is_published = !$post->is_published;
 		$post->save();
-		return redirect(route('posts.index'))->with('status', 'Post has been published!');
+
+		if ($post->is_published) {
+			$message = 'Post has been published!';
+		} else {
+			$message = 'Post has been unpublished!';
+		}
+		return redirect(route('posts.index'))->with('status', $message);
 	}
 }

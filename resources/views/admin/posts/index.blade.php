@@ -63,7 +63,13 @@
 				  <a href="{{ route('posts.edit', $post) }}" class="text-indigo-600 hover:text-indigo-900">Edit</a>
 				  <form method="POST" action="{{ route('posts.publish', $post) }}">
 					@csrf
-					<button type="submit" class="text-medium text-indigo-600 hover:text-indigo-900">Publish</button>
+					<button type="submit" class="text-medium text-indigo-600 hover:text-indigo-900">
+					@if (!$post->is_published) 
+						Publish
+					@else
+						Unpublish
+					@endif
+					</button>
 				  </form>
 				</td>
 			  </tr>
