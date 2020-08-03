@@ -57,10 +57,14 @@
 				  {{ $post->tags->implode('name', ', ') }}
 				</td>
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-				  {{ ($post->is_published == 1) ? 'Yes' : 'No' }}
+				  {{ ($post->is_published == true) ? 'Yes' : 'No' }}
 				</td>
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium">
 				  <a href="{{ route('posts.edit', $post) }}" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+				  <form method="POST" action="{{ route('posts.publish', $post) }}">
+					@csrf
+					<button type="submit" class="text-medium text-indigo-600 hover:text-indigo-900">Publish</button>
+				  </form>
 				</td>
 			  </tr>
 		  @empty

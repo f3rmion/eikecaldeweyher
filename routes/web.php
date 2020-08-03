@@ -11,6 +11,7 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth'], function() {
 	Route::get('/home', 'HomeController@index')->name('home');
+	Route::post('/posts/{post}/publish', 'PostsController@publish')->name('posts.publish');
 	Route::get('/posts', 'PostsController@index')->name('posts.index');
 	Route::get('/posts/create', 'PostsController@create')->name('posts.create');
 	Route::post('/posts/create', 'PostsController@store')->name('posts.store');

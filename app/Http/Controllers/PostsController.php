@@ -80,4 +80,11 @@ class PostsController extends Controller
 
 		return redirect(route('posts.index'))->with('status', 'Post seccessfully updated!');
 	}
+
+	public function publish(Post $post)
+	{
+		$post->is_published = !$post->is_published;
+		$post->save();
+		return redirect(route('posts.index'))->with('status', 'Post has been published!');
+	}
 }
