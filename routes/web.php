@@ -7,6 +7,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/research', 'ResearchController@index')->name('research.index');
+
 Auth::routes();
 
 Route::group(['middleware' => 'auth'], function() {

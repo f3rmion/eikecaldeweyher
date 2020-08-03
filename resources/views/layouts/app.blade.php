@@ -23,7 +23,7 @@
 					</div>
 				</a>	
 				<ul class="flex text-gray-600 ml-0 lg:ml-16 space-x-8 mt-6 lg:mt-0">
-					<li>Research</li>
+					<li><a href="{{ route('research.index') }}">Research</a></li>
 					<li>Contact</li>
 					<li><a href="https://theprototypers.de/">Hire</a></li>
 				</ul>
