@@ -25,4 +25,11 @@ Route::group(['middleware' => 'auth'], function() {
 	Route::post('/categories/create', 'CategoriesController@store')->name('categories.store');
 	Route::get('/categories/{category}', 'CategoriesController@edit')->name('categories.edit');
 	Route::post('/categories/{category}', 'CategoriesController@update')->name('categories.update');
+
+	Route::get('/tags', 'TagsController@index')->name('tags.index');
+	Route::get('/tags/create', 'TagsController@create')->name('tags.create');
+	Route::post('/tags/{tag}/delete', 'TagsController@delete')->name('tags.delete');
+	Route::post('/tags/create', 'TagsController@store')->name('tags.store');
+	Route::get('/tags/{tag}', 'TagsController@edit')->name('tags.edit');
+	Route::post('/tags/{tag}', 'TagsController@update')->name('tags.update');
 });
