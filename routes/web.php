@@ -18,4 +18,10 @@ Route::group(['middleware' => 'auth'], function() {
 	Route::post('/posts/create', 'PostsController@store')->name('posts.store');
 	Route::get('/posts/{post}', 'PostsController@edit')->name('posts.edit');
 	Route::post('/posts/{post}', 'PostsController@update')->name('posts.update');
+
+	Route::get('/categories', 'CategoriesController@index')->name('categories.index');
+	Route::get('/categories/create', 'CategoriesController@create')->name('categories.create');
+	Route::post('/categories/create', 'CategoriesController@store')->name('categories.store');
+	Route::get('/categories/{category}', 'CategoriesController@edit')->name('categories.edit');
+	Route::post('/categories/{category}', 'CategoriesController@update')->name('categories.update');
 });
