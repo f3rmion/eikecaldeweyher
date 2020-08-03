@@ -12,8 +12,8 @@ class PostsController extends Controller
 {
 	public function index()
 	{
-		$posts = Post::with(['user', 'tags', 'category'])->paginate(10);
-
+		$posts = Post::orderBy('updated_at', 'desc')->get();
+		
 		return view('admin.posts.index', compact('posts'));
 	}
 
@@ -27,45 +27,25 @@ class PostsController extends Controller
 	public function store(PostRequest $request)
 	{
 		$parameter = $request->all();
-
 		$user = auth()->user();
-		$tags = $this->loadData($parameter['tags'], Tag::class);
 		
+		$category = Category::where('name', $parameter['categories'][0])->first();
+
 		$post = Post::create([
-			'title' => $parameter['title'],
+			'title' => $request->title,
 			'body' => $parameter['body'],
 			'user_id' => $user->id,
-			'category_id' => $parameter['category_id'],
+			'category_id' => $category->id,
 		]);
 
-		$post->save();
-		$post->tags()->saveMany($tags);
+		$tagsID = collect($request->tags)->map(function ($tag) {
+			return Tag::firstOrCreate(['name' => $tag])->id;
+		});
 
-		return redirect(route('posts.index'))->with('message', 'Post successfully created!');
+		$post->tags()->attach($tagsID);
+
+		return redirect(route('posts.index'))->with('status', 'Post created sucessfully!');
 
 	}
 
-	protected function loadData($data, $model): array
-	{
-		$result = [];
-
-		if (! is_array($data)) {
-			return [];
-		}	
-
-		$data = array_unique($data);
-
-		foreach ($data as $name) {
-			if ($name == '') {
-				continue;
-			}
-
-			$c = $model::where('name', $name)->first();
-			if ($c) {
-				$results[] = $c; 
-			}
-		}
-
-		return $result;
-	}
 }

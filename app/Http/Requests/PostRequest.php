@@ -26,7 +26,7 @@ class PostRequest extends FormRequest
         return [
 			'title' => 'required',
 			'body' => 'required',
-			'category_id' => 'required',
+			'categories' => 'required',
         ];
 	}
 
@@ -35,7 +35,7 @@ class PostRequest extends FormRequest
 		return [
 			'title.required' => 'Please add a title.',
 			'body.required' => 'Please add a body.',
-			'category_id.required' => 'Please add a category.',
+			'categories.required' => 'Please add a category.',
 		];
 	}
 }

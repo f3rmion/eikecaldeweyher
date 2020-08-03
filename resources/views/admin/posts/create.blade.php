@@ -20,15 +20,10 @@
           title="Body"
         />
 
-		@php
-			$categories = \App\Category::all();
-		@endphp
-        <x-input.select
-          class="col-span-4"
-          name="category_id"
-		  title="Category"
-		  :options="$categories"
-        />
+        <div class="col-span-4">
+			<label for="Tags" class="block text-sm font-medium leading-5 text-gray-700">Category</label>
+			<livewire:category-select />
+		</div>
 
         <div class="col-span-4">
 			<label for="Tags" class="block text-sm font-medium leading-5 text-gray-700">Tags</label>
