@@ -71,6 +71,12 @@
 					@endif
 					</button>
 				  </form>
+				  <form method="POST" action="{{ route('posts.delete', $post) }}">
+					@csrf
+					<button type="submit" class="text-medium text-indigo-600 hover:text-indigo-900">
+						Delete
+					</button>
+				  </form>
 				</td>
 			  </tr>
 		  @empty
