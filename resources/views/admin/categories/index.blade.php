@@ -37,7 +37,7 @@
 				</td>
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium">
 				  <a href="{{ route('categories.edit', $category) }}" class="font-normal text-indigo-600 hover:text-indigo-900">Edit</a>
-				  <form method="POST" action="">
+				  <form method="POST" action="{{ route('categories.delete', $category) }}">
 					@csrf
 					<button type="submit" class="text-medium text-indigo-600 hover:text-indigo-900">
 						Delete
