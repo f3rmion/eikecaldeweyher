@@ -60,7 +60,7 @@
 				  {{ ($post->is_published == 1) ? 'Yes' : 'No' }}
 				</td>
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium">
-				  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+				  <a href="{{ route('posts.edit', $post) }}" class="text-indigo-600 hover:text-indigo-900">Edit</a>
 				</td>
 			  </tr>
 		  @empty

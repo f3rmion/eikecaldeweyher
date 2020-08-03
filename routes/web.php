@@ -14,4 +14,6 @@ Route::group(['middleware' => 'auth'], function() {
 	Route::get('/posts', 'PostsController@index')->name('posts.index');
 	Route::get('/posts/create', 'PostsController@create')->name('posts.create');
 	Route::post('/posts/create', 'PostsController@store')->name('posts.store');
+	Route::get('/posts/{post}', 'PostsController@edit')->name('posts.edit');
+	Route::post('/posts/{post}', 'PostsController@update')->name('posts.update');
 });
