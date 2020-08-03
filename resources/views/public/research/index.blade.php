@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container mx-auto">
-	<h2 class="text-gray-700 uppercase tracking-wide font-semibold">Articles and Projects</h2>		
+	<h2 class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Research and Development</h2>		
 	<div class="posts text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 row-gap-10 col-gap-12 pb-16">
 	@foreach ($posts as $post)
 		<div class="post mt-8">

@@ -42,10 +42,10 @@
 		  @forelse ($posts as $post)
 			  <tr class="bg-white">
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-				  {!! \Illuminate\Support\Str::words($post->title, 8, '...') !!}
+				  {!! \Illuminate\Support\Str::limit($post->title, 30, '...') !!}
 				</td>
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-				  {!! \Illuminate\Support\Str::words($post->body, 8, '...') !!}
+				  {!! \Illuminate\Support\Str::limit($post->body, 20, '...') !!}
 				</td>
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
 				  {{ $post->user->name }}
