@@ -24,20 +24,26 @@
 				</a>	
 				<ul class="flex text-gray-600 ml-0 lg:ml-16 space-x-8 mt-6 lg:mt-0">
 					<li>Research</li>
-					<li><a href="https://theprototypers.de/">Hire</a></li>
 					<li>Contact</li>
-					@if (Auth::guest())
-					<li><a href="{{ route('login') }}">Login</a></li>
-					@endif
-					<li>
-						<form action="{{ route('logout') }}" method="post">
-							@csrf
-							<button>{{ Auth::user()->email ?? '' }}</button>
-						</form>
-					</li>
+					<li><a href="https://theprototypers.de/">Hire</a></li>
 				</ul>
 				@includeWhen(Auth::user(), 'layouts._admin_menu')
 			</div>
+			<div class="flex items-center mt-6 lg:mt-0">
+				<div class="relative">
+					<div class="absolute top-0 flex items-center h-full ml-2">
+					@if (Auth::guest())
+						<a href="{{ route('login') }}">Login</a>
+					@else
+						<form action="{{ route('logout') }}" method="post">
+							@csrf
+							<button>{{ Auth::user()->email ?? '' }}</button>
+						</form>	
+					@endif
+					</div>
+				</div>
+			</div>
+
 		</nav>
 	</header>
 	<main class="py-8">
