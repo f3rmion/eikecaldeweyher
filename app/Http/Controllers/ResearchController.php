@@ -13,4 +13,9 @@ class ResearchController extends Controller
 		
 		return view('public.research.index', compact('posts'));
 	}
+
+	public function show(Post $post)
+	{
+		return view('public.research.show', compact('post'));
+	}
 }

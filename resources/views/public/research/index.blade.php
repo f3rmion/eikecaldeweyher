@@ -7,7 +7,7 @@
 	@foreach ($posts as $post)
 		<div class="post mt-8">
 			<div class="relative inline-block">
-				<a href="">
+				<a href="{{ route('research.show', $post) }}">
 					<img src="{{ $post->imageUrl() }}" alt="nature" class="hover:opacity-75 rounded transition ease-in-out duration-150" style="height:200px; width: 150px;">
 				</a>
 				@if(isset($post->doi))

@@ -8,6 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/research', 'ResearchController@index')->name('research.index');
+Route::get('/research/{post}', 'ResearchController@show')->name('research.show');
 
 Auth::routes();
 
