@@ -48,6 +48,6 @@ class Post extends Model
 
 	public function getAuthors()
 	{
-		return implode(', ', (array) $this->authors);
+		return implode(' and ', (array) $this->authors);
 	}
 }
