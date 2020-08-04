@@ -20,6 +20,7 @@ class CreatePostsTable extends Migration
 			$table->integer('user_id')->unsigned();
 			$table->integer('category_id')->unsigned();
 			$table->boolean('is_published')->default(false);
+			$table->string('cover')->nullable();
             $table->timestamps();
         });
     }

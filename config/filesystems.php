@@ -48,6 +48,13 @@ return [
             'root' => storage_path('app'),
         ],
 
+        'covers' => [
+            'driver' => 'local',
+            'root' => storage_path('app/covers'),
+            'url' => env('APP_URL').'/covers',
+            'visibility' => 'public',
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
@@ -79,7 +86,7 @@ return [
     */
 
     'links' => [
-        public_path('storage') => storage_path('app/public'),
+        public_path('covers') => storage_path('app/covers'),
     ],
 
 ];

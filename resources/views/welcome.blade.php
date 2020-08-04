@@ -52,9 +52,9 @@
         </div>
         <div class="prose text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
           <ul>
+            <li class="uppercase">Method Developer</li>
             <li class="uppercase">Machine Learning Engineering</li>
-            <li class="uppercase">Chemical Reactions</li>
-            <li class="uppercase">Method Development</li>
+            <li class="uppercase">Computational Chemist</li>
           </ul>
 		  <h2>Current Research</h2>
 		  <p>Since September 2020, I work for <a href="https://chemistry.nd.edu/people/per-ola-norrby/">Per-Ola Norrby</a> at AstraZeneca R&D in Gothenburg, Sweden. 

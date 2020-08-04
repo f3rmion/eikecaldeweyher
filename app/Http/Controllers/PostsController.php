@@ -36,6 +36,7 @@ class PostsController extends Controller
 			'body' => $parameter['body'],
 			'user_id' => $user->id,
 			'category_id' => $category->id,
+			'cover' => $request->cover->store('/', 'covers'),
 		]);
 
 		$tagsID = collect($request->tags)->map(function ($tag) {
@@ -71,6 +72,12 @@ class PostsController extends Controller
 			'body' => $parameter['body'],
 			'categories' => $category->id,
 		]);
+
+		if(isset($parameter['cover'])) {
+			$post->update([
+				'cover' => $request->cover->store('/', 'covers'),
+			]);
+		}
 
 		$tagsID = collect($request->tags)->map(function ($tag) {
 			return Tag::firstOrCreate(['name' => $tag])->id;

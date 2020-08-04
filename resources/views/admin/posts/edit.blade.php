@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container mx-auto">
-<form method="POST" action="{{ route('posts.update', $post) }}">
+<form method="POST" action="{{ route('posts.update', $post) }}" enctype="multipart/form-data">
 	@csrf
 
     <x-input.form-2column title="Update Post" description="Enter your updated details">
@@ -32,6 +32,20 @@
 			<label for="Tags" class="block text-sm font-medium leading-5 text-gray-700">Tags</label>
 			<livewire:tag-select :tags="$post->tags()->pluck('name')->toArray()"/>
 		</div>
+
+		<!-- cover_image --!>
+		<div class="col-span-4">
+		  <label class="block text-sm font-medium leading-5 text-gray-700 mb-1" for="cover">Cover</label>
+			  <input
+			  id="cover"
+			  name="cover"
+			  value="{{ old($post->cover) }}"
+			  type="file">
+			  @error('cover')
+				  <p class="text-red-500 text-sm italic">{{ $message }}</p>
+			  @enderror
+		</div>
+		<!-- /cover_image --!>
 
         <div class="col-span-6">
             <span class="inline-flex rounded-md shadow-sm">
