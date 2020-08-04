@@ -30,7 +30,13 @@
 			<livewire:tag-select />
 		</div>
 
-		<!-- cover_image --!>
+        <x-input.text
+          class="col-span-4"
+          name="doi"
+          title="DOI"
+		  placeholder="(optional)"
+        />
+
 		<div class="col-span-4">
 		  <label class="block text-sm font-medium leading-5 text-gray-700 mb-1" for="cover">Cover</label>
 			  <input
@@ -41,7 +47,6 @@
 				  <p class="text-red-500 text-sm italic">{{ $message }}</p>
 			  @enderror
 		</div>
-		<!-- /cover_image --!>
 
         <div class="col-span-6">
             <span class="inline-flex rounded-md shadow-sm">

@@ -33,7 +33,13 @@
 			<livewire:tag-select :tags="$post->tags()->pluck('name')->toArray()"/>
 		</div>
 
-		<!-- cover_image --!>
+        <x-input.text
+          class="col-span-4"
+          name="doi"
+          title="DOI"
+		  value="{{ $post->doi }}"
+        />
+
 		<div class="col-span-4">
 		  <label class="block text-sm font-medium leading-5 text-gray-700 mb-1" for="cover">Cover</label>
 			  <input
@@ -45,7 +51,6 @@
 				  <p class="text-red-500 text-sm italic">{{ $message }}</p>
 			  @enderror
 		</div>
-		<!-- /cover_image --!>
 
         <div class="col-span-6">
             <span class="inline-flex rounded-md shadow-sm">

@@ -36,6 +36,7 @@ class PostsController extends Controller
 			'body' => $parameter['body'],
 			'user_id' => $user->id,
 			'category_id' => $category->id,
+			'doi' => $parameter['doi'],
 			'cover' => $request->cover->store('/', 'covers'),
 		]);
 
@@ -70,6 +71,7 @@ class PostsController extends Controller
 		$post->update([
 			'title' => $parameter['title'],
 			'body' => $parameter['body'],
+			'doi' => $parameter['doi'],
 			'categories' => $category->id,
 		]);
 

@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
 			$table->integer('category_id')->unsigned();
 			$table->boolean('is_published')->default(false);
 			$table->string('cover')->nullable();
+			$table->string('doi')->nullable();
             $table->timestamps();
         });
     }

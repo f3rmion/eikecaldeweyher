@@ -15,6 +15,7 @@ class Post extends Model
 		'body',
 		'user_id',
 		'category_id',
+		'doi',
 		'cover',
 	];
 
