@@ -53,7 +53,7 @@
         <div class="prose text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
           <ul>
             <li class="uppercase">Method Developer</li>
-            <li class="uppercase">Machine Learning Engineering</li>
+            <li class="uppercase">Machine Learning Engineer</li>
             <li class="uppercase">Computational Chemist</li>
           </ul>
 		  <h2>Current Research</h2>
