@@ -34,6 +34,7 @@ class PostsController extends Controller
 		$post = Post::create([
 			'title' => $request->title,
 			'body' => $parameter['body'],
+			'authors' => $parameter['authors'],
 			'user_id' => $user->id,
 			'category_id' => $category->id,
 			'doi' => $parameter['doi'],

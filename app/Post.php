@@ -16,7 +16,12 @@ class Post extends Model
 		'user_id',
 		'category_id',
 		'doi',
+		'authors',
 		'cover',
+	];
+
+	protected $casts = [
+		'authors' => 'array',
 	];
 
 	public function category()
@@ -39,5 +44,10 @@ class Post extends Model
 		return $this->cover
 			? Storage::disk('covers')->url($this->cover)
 			: 'https://images.unsplash.com/photo-1508616185939-efe767994166?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80';
+	}
+
+	public function getAuthors()
+	{
+		return implode(', ', (array) $this->authors);
 	}
 }

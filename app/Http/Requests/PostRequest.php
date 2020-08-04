@@ -27,6 +27,8 @@ class PostRequest extends FormRequest
 			'title' => 'required',
 			'body' => 'required',
 			'categories' => 'required',
+			'authors' => 'present|array',
+			'authors.*' => 'string|required',
         ];
 	}
 

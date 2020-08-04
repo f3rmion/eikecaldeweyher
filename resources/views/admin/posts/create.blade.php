@@ -21,7 +21,12 @@
         />
 
         <div class="col-span-4">
-			<label for="Tags" class="block text-sm font-medium leading-5 text-gray-700">Category</label>
+			<label for="Authors" class="block text-sm font-medium leading-5 text-gray-700">Authors</label>
+			@livewire('author-select', ['authors' => $post->authors ?? ['']])
+		</div>
+
+        <div class="col-span-4">
+			<label for="Category" class="block text-sm font-medium leading-5 text-gray-700">Category</label>
 			<livewire:category-select />
 		</div>
 

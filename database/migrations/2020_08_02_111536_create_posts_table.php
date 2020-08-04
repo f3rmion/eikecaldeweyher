@@ -17,6 +17,7 @@ class CreatePostsTable extends Migration
 			$table->increments('id');
 			$table->string('title');
 			$table->text('body');
+			$table->json('authors');
 			$table->integer('user_id')->unsigned();
 			$table->integer('category_id')->unsigned();
 			$table->boolean('is_published')->default(false);
