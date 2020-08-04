@@ -25,15 +25,14 @@
 				  {{ $post->category->name }}
 				</button>
 			</div>
-			<a href="" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-4">
-				{{ $post->title }}
-			</a>
 			<div class="text-indigo-600 text-xs mt-2 font-semibold">
-				Tags:
 				<button type="button" class="inline-flex items-center px-2.5 py-1.5 border border-gray-300 text-xs leading-4 font-medium rounded text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150">
 				  {{ $post->tags->pluck('name')->implode(', ') }}
 				</button>
 			</div>
+			<a href="" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-4">
+				{{ $post->title }}
+			</a>
 			<div class="text-gray-600 text-xs mt-1">
 			{{ $post->getAuthors() }}	
 			</div>

@@ -16,6 +16,7 @@ class ResearchController extends Controller
 
 	public function show(Post $post)
 	{
+		$post->hashid();
 		return view('public.research.show', compact('post'));
 	}
 }

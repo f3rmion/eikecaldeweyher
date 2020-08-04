@@ -7,9 +7,13 @@ use App\Tag;
 use App\Category;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use Mtvs\EloquentHashids\HasHashid;
+use Mtvs\EloquentHashids\HashidRouting;
 
 class Post extends Model
 {
+	use HasHashid, HashidRouting;
+
 	protected $fillable = [
 		'title',
 		'body',
