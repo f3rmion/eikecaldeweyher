@@ -28,17 +28,17 @@ class PostsController extends Controller
 	{
 		$parameter = $request->all();
 		$user = auth()->user();
-		
+
 		$category = Category::where('name', $parameter['categories'][0])->first();
 
 		$post = Post::create([
 			'title' => $request->title,
-			'body' => $parameter['body'],
 			'authors' => $parameter['authors'],
 			'user_id' => $user->id,
 			'category_id' => $category->id,
 			'doi' => $parameter['doi'],
 			'cover' => $request->cover->store('/', 'covers'),
+			'post-trixFields' => request('post-trixFields'),
 		]);
 
 		$tagsID = collect($request->tags)->map(function ($tag) {
@@ -68,12 +68,12 @@ class PostsController extends Controller
 		$parameter = $request->all();
 
 		$category = Category::where('name', $parameter['categories'][0])->first();
-
+		
 		$post->update([
 			'title' => $parameter['title'],
-			'body' => $parameter['body'],
 			'doi' => $parameter['doi'],
-			'categories' => $category->id,
+			'category_id' => $category->id,
+			'post-trixFields' => request('post-trixFields'),
 		]);
 
 		if(isset($parameter['cover'])) {

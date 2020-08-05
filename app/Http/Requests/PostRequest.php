@@ -25,7 +25,7 @@ class PostRequest extends FormRequest
     {
         return [
 			'title' => 'required',
-			'body' => 'required',
+			'post-trixFields' => 'required',
 			'categories' => 'required',
 			'authors' => 'present|array',
 			'authors.*' => 'string|required',

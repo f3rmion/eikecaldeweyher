@@ -14,13 +14,12 @@
           title="Title"
         />
 
-        <x-input.textarea
-          class="col-span-4"
-          name="body"
-          title="Body"
-        />
-
         <div class="col-span-4">
+			<label for="Authors" class="block text-sm font-medium leading-5 text-gray-700">Body</label>
+			@trix(\App\Post::class, 'body')
+		</div>
+		
+		<div class="col-span-4">
 			<label for="Authors" class="block text-sm font-medium leading-5 text-gray-700">Authors</label>
 			@livewire('author-select', ['authors' => $post->authors ?? ['']])
 		</div>

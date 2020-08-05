@@ -45,7 +45,7 @@
 				  {!! \Illuminate\Support\Str::limit($post->title, 30, '...') !!}
 				</td>
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-				  {!! \Illuminate\Support\Str::limit($post->body, 20, '...') !!}
+				  {!! $post->trixRichText()->where('field', 'body')->first()->content !!}
 				</td>
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
 				  {{ $post->user->name }}

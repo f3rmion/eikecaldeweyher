@@ -20,11 +20,7 @@
 				
 			
 				<p class="mt-12">
-					@empty($post->body)
-						No description available.
-					@else
-						{{ $post->body }} 
-					@endempty
+					{!! $post->trixRichText()->where('field', 'body')->first()->content !!}
 				</p>
 				
 			</div>

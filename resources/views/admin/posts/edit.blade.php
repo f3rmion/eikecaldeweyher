@@ -16,12 +16,10 @@
 		  value="{{ $post->title }}"
         />
 
-        <x-input.textarea
-          class="col-span-4"
-          name="body"
-          title="Body"
-		  value="{{ $post->body }}"
-        />
+        <div class="col-span-4">
+			<label for="Authors" class="block text-sm font-medium leading-5 text-gray-700">Body</label>
+			@trix($post, 'body')
+		</div>
 
         <div class="col-span-4">
 			<label for="Authors" class="block text-sm font-medium leading-5 text-gray-700">Authors</label>

@@ -9,11 +9,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use Mtvs\EloquentHashids\HasHashid;
 use Mtvs\EloquentHashids\HashidRouting;
+use Te7aHoudini\LaravelTrix\Traits\HasTrixRichText;
 
 class Post extends Model
 {
 	use HasHashid, HashidRouting;
+	use HasTrixRichText;
 
+	/*
 	protected $fillable = [
 		'title',
 		'body',
@@ -23,6 +26,8 @@ class Post extends Model
 		'authors',
 		'cover',
 	];
+	*/
+	protected $guarded = [];
 
 	protected $casts = [
 		'authors' => 'array',
