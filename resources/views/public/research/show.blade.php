@@ -7,7 +7,7 @@
 				<img src="{{ $post->imageUrl() }}" alt="cover" class="rounded" style="height:400px; width: 300px;">
 			</div>
 			<div class="lg:ml-12 xl:mr-64">
-				<h2 class="font-semibold text-gray-700 text-4xl leading-tight mt-1">{{ $post->title }}</h2>
+				<h2 class="font-semibold text-indigo-600 text-4xl leading-tight mt-1">{{ $post->title }}</h2>
 				<div class="text-gray-600">
 					<span>{{ $post->getAuthors() }}</span>
 				</div>
