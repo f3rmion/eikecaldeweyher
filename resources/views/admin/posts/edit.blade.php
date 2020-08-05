@@ -18,7 +18,7 @@
 
         <div class="col-span-4">
 			<label for="Authors" class="block text-sm font-medium leading-5 text-gray-700">Body</label>
-			@trix(\App\Post::class, 'body', ['hideButtonIcons' => 'attach'])
+			@trix($post, 'body', ['hideButtonIcons' => 'attach'])
 		</div>
 
         <div class="col-span-4">
