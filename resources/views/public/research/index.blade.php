@@ -30,7 +30,7 @@
 				  {{ $post->tags->pluck('name')->implode(', ') }}
 				</button>
 			</div>
-			<a href="" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-4">
+			<a href="{{ route('research.show', $post) }}" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-4">
 				{{ $post->title }}
 			</a>
 			<div class="text-gray-600 text-xs mt-1">
