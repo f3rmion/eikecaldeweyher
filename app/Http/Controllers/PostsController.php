@@ -71,6 +71,7 @@ class PostsController extends Controller
 		
 		$post->update([
 			'title' => $parameter['title'],
+			'authors' => $parameter['authors'],
 			'doi' => $parameter['doi'],
 			'category_id' => $category->id,
 			'post-trixFields' => request('post-trixFields'),
