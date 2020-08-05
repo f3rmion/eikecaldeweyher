@@ -61,7 +61,7 @@
 			My main focus is on <b>data-driven discovery and prediction of reactivities</b>.</p>
           <h2>How I came here</h2>
           <p>I recieved my Bachelor's and Master's degree from the Rheinische-Friedrich-Wilhelms Universität Bonn, Germany. During my Master's research I started developing the <i>dftd4</i> method for treating London dispersion effects within density functional theory. After graduating in November 2016, I have been working for Stefan Grimme in the Mulliken center for theoretical chemistry where I obtained my PhD in April 2020.</p>
-          <p>Most of the models I developed are accessible through different quantum chemical codes (see <a href="https://orcaforum.kofo.mpg.de/app.php/portal">ORCA</a>, <a href=https://www.turbomole.org/"">TURBOMOLE</a>, <a href=https://www.vasp.at/"">VASP</a>).</p>
+          <p>Most of the models I developed are accessible through different quantum chemical codes (see <a href="https://orcaforum.kofo.mpg.de/app.php/portal">ORCA</a>, <a href=https://www.turbomole.org/"">TURBOMOLE</a>, <a href="https://www.vasp.at/">VASP</a>).</p>
 		  <p>Code is available on Github: <a href="https://github.com/dftd4/dftd4">dftd4</a>, <a href="https://github.com/grimme-lab/xtb">xTB</a></p>
         </div>
       </div>
