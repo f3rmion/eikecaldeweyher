@@ -48,7 +48,7 @@
 				  {{ $post->category->name }}
 				</td>
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-				  {{ $post->tags->implode('name', ', ') }}
+				  {!! \Illuminate\Support\Str::limit($post->tags->implode('name', ', '), 30, '...') !!}
 				</td>
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
 				  {{ ($post->is_published == true) ? 'Yes' : 'No' }}

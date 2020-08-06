@@ -10,6 +10,9 @@
 	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
+	<link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+	<link rel="icon" type="image/png" href="{{ asset('favicon-32x32.png') }}">
+
 	@livewireStyles
 	@trixassets
 </head>
@@ -20,7 +23,7 @@
 			<div class="flex flex-col lg:flex-row items-center">
 				<a href="/">
 					<div class="w-12 text-gray-600 text-xl tracking-wide font-semibold flex-none">
-					...	
+						<img src="/logo.png">
 					</div>
 				</a>	
 				<ul class="flex text-gray-600 ml-0 lg:ml-16 space-x-8 mt-6 lg:mt-0">
