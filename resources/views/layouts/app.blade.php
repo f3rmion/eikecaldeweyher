@@ -35,12 +35,7 @@
 					  document.write('<li><A href="mailto:' + emailE + '">' + tag + '</a></li>')
 					</script>
 					<li><a href="https://theprototypers.de/">Hire</a></li>
-				</ul>
-				@includeWhen(Auth::user(), 'layouts._admin_menu')
-			</div>
-			<div class="flex items-center mt-6 lg:mt-0">
-				<div class="relative">
-					<div class="absolute top-0 flex items-center h-full ml-2">
+					<li>
 					@if (Auth::guest())
 						<a href="{{ route('login') }}">Login</a>
 					@else
@@ -48,11 +43,11 @@
 							@csrf
 							<button>Logout</button>
 						</form>	
-					@endif
-					</div>
-				</div>
+					@endif	
+					</li>					
+				</ul>
+				@includeWhen(Auth::user(), 'layouts._admin_menu')
 			</div>
-
 		</nav>
 	</header>
 
