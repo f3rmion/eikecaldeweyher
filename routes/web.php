@@ -10,7 +10,11 @@ Route::get('/', function () {
 Route::get('/research', 'ResearchController@index')->name('research.index');
 Route::get('/research/{post}', 'ResearchController@show')->name('research.show');
 
-Auth::routes();
+Auth::routes([
+  'register' => false, // Registration Routes...
+  'reset' => false, // Password Reset Routes...
+  'verify' => false, // Email Verification Routes...
+]);
 
 Route::group(['middleware' => 'auth'], function() {
 	Route::get('/home', 'HomeController@index')->name('home');

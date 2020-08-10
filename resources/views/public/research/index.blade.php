@@ -12,7 +12,7 @@
 				</a>
 				@if(isset($post->doi))
 				<a href="https://doi.org/{{ $post->doi }}">
-				<div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full" style="right: -20px; bottom: -20px">
+				<div class="absolute bottom-0 right-0 w-12 h-12 bg-gray-800 rounded-full" style="right: -16px; bottom: -16px">
 					<div class="font-semibold text-white text-xs flex justify-center items-center h-full">
 						DOI
 					</div>
