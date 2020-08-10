@@ -46,7 +46,7 @@
 					@else
 						<form action="{{ route('logout') }}" method="post">
 							@csrf
-							<button>{{ Auth::user()->email ?? '' }}</button>
+							<button>Logout</button>
 						</form>	
 					@endif
 					</div>
