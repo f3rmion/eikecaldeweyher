@@ -22,7 +22,7 @@
 		<nav class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 py-6">
 			<div class="flex flex-col lg:flex-row items-center">
 				<a href="/">
-					<div class="w-12 text-gray-600 text-xl tracking-wide font-semibold flex-none">
+					<div class="w-20 lg:w-12 text-gray-600 text-xl tracking-wide font-semibold flex-none">
 						<img src="/logo.png">
 					</div>
 				</a>	
