@@ -8,7 +8,7 @@
 		<div class="post mt-8">
 			<div class="relative inline-block">
 				<a href="{{ route('research.show', $post) }}">
-					<img src="{{ $post->imageUrl() }}" alt="nature" class="hover:opacity-75 rounded transition ease-in-out duration-150 object-contain h-64 w-full" >
+					<img src="{{ $post->imageUrl() }}" alt="cover" class="hover:opacity-75 rounded transition ease-in-out duration-150 object-contain h-64 w-full" >
 				</a>
 				@if(isset($post->doi))
 				<a href="https://doi.org/{{ $post->doi }}">
