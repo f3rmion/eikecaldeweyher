@@ -31,4 +31,5 @@ class HomeController extends Controller
 		$tags = Tag::count();
         return view('home', get_defined_vars());
     }
+
 }

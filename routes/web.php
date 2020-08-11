@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/imprint', function () {
+    return view('imprint');
+})->name('imprint');
+
 Route::get('/research', 'ResearchController@index')->name('research.index');
 Route::get('/research/{post}', 'ResearchController@show')->name('research.show');
 

@@ -35,6 +35,7 @@
 					  document.write('<li><A href="mailto:' + emailE + '">' + tag + '</a></li>')
 					</script>
 					<li><a href="https://theprototypers.de/">Hire</a></li>
+					<li><a href="{{ route('imprint') }}">Imprint</a></li>
 					<li>
 					@if (Auth::guest())
 						<a href="{{ route('login') }}">Login</a>
