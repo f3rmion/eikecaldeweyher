@@ -27,14 +27,8 @@
 					</div>
 				</a>	
 				<ul class="flex text-gray-600 ml-0 lg:ml-16 space-x-8 mt-6 lg:mt-0">
-					<li><a href="{{ route('research.index') }}">R&D</a></li>
-					<SCRIPT TYPE="text/javascript">
-					  emailE = 'eikecaldeweyher.de'
-					  emailE = ('hello' + '@' + emailE)
-					  tag = 'Contact'
-					  document.write('<li><A href="mailto:' + emailE + '">' + tag + '</a></li>')
-					</script>
 					<li><a href="https://theprototypers.de/">Hire</a></li>
+					<li><a href="{{ route('research.index') }}">R&D</a></li>
 					<li><a href="{{ route('imprint') }}">Imprint</a></li>
 					<li>
 					@if (Auth::guest())
