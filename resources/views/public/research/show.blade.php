@@ -4,7 +4,7 @@
 	<div class="container mx-auto px-4">
 		<div class="post-details pb-12 flex flex-col lg:flex-row">
 			<div class="flex-none">
-				<img src="{{ $post->imageUrl() }}" alt="cover" class="rounded object-contain h-auto w-auto">
+				<img src="{{ $post->imageUrl() }}" alt="cover" class="rounded object-contain h-64 w-64">
 			</div>
 			<div class="lg:ml-12 xl:mr-64">
 				<h2 class="font-semibold text-indigo-600 text-4xl leading-tight mt-1">{{ $post->title }}</h2>
