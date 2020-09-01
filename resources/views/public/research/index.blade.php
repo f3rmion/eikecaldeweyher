@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container mx-auto p-4 lg:p-0">
+<div class="container mx-auto pl-4 lg:p-4 lg:p-0">
 	<h2 class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Research and Development</h2>		
-	<div class="posts text-sm w-full pl-16 lg:pl-0 pr-16 lg:pr-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 row-gap-10 col-gap-12 pb-16">
+	<div class="posts text-sm w-full lg:pl-0 pr-16 lg:pr-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 row-gap-10 col-gap-12 pb-16">
 	@foreach ($posts as $post)
 		<div class="post mt-8">
 			<div class="relative inline-block">
