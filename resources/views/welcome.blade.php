@@ -48,17 +48,16 @@
       </div>
       <div>
         <div class="text-base max-w-prose mx-auto lg:max-w-none">
-          <p class="text-lg leading-7 text-gray-500 mb-5">Postdoc at <a href="https://www.astrazeneca.com/our-science/gothenburg.html">AstraZeneca R&D</a> in Gothenburg</p>
+          <p class="text-lg leading-7 text-gray-500 mb-5">Postdoc fellow at <a href="https://www.astrazeneca.com/our-science/gothenburg.html">AstraZeneca R&D</a> in Gothenburg</p>
         </div>
         <div class="prose text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
           <ul>
             <li class="uppercase">Method Developer</li>
-            <li class="uppercase">Machine Learning Engineer</li>
             <li class="uppercase">Computational Chemist</li>
+            <li class="uppercase">Machine Learning Engineer</li>
           </ul>
 		  <h2>Current Research</h2>
-		  <p>Since September 2020, I work for <a href="https://chemistry.nd.edu/people/per-ola-norrby/">Per-Ola Norrby</a> at AstraZeneca R&D in Gothenburg, Sweden. 
-			My main focus is on <b>data-driven discovery and prediction of reactivities</b>.</p>
+		  <p>Since September 2020, I work in the data science and modelling group of <a href="https://www.astrazeneca.com/our-company/our-people/anders-broo.html">Anders Broo</a> at AstraZeneca R&D in Gothenburg, Sweden. My supervisors are <a href="https://chemistry.nd.edu/people/per-ola-norrby/">Per-Ola Norrby</a> and <a href="https://www.astrazeneca.com/our-company/our-people/magnus-johansson.html">Magnus Johannson</a> and my main focus is on <b>data-driven discovery and prediction of reactivities</b> especially C-H bond activation.</p>
           <h2>How I came here</h2>
           <p>I received my Bachelor's and Master's degree from the Rheinische-Friedrich-Wilhelms Universität Bonn, Germany. During my Master's research, I started developing the <i>dftd4</i> method for treating London dispersion effects within density functional theory. After graduating in November 2016, I have been working for Stefan Grimme in the Mulliken center for theoretical chemistry where I obtained my PhD in April 2020.</p>
           <p>Most of the models I developed are accessible through different quantum chemical codes (see <a href="https://orcaforum.kofo.mpg.de/app.php/portal">ORCA</a>, <a href="https://www.turbomole.org/">TURBOMOLE</a>, <a href="https://www.vasp.at/">VASP</a>).</p>
