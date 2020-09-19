@@ -18,16 +18,16 @@
             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
               Title
             </th>
-            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+            <th class="hidden md:visible px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
               Author
             </th>
-            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+            <th class="hidden md:visible px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
               Category
             </th>
-            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+            <th class="hidden md:visible px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
               Tags
             </th>
-            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+            <th class="hidden md:visible px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
               Published
             </th>
             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
@@ -41,16 +41,16 @@
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
 				  {!! \Illuminate\Support\Str::limit($post->title, 30, '...') !!}
 				</td>
-				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+				<td class="hidden md:visible px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
 				  {{ $post->user->name }}
 				</td>
-				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+				<td class="hidden md:visible px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
 				  {{ $post->category->name }}
 				</td>
-				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+				<td class="hidden md:visible px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
 				  {!! \Illuminate\Support\Str::limit($post->tags->implode('name', ', '), 30, '...') !!}
 				</td>
-				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+				<td class="hidden md:visible px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
 				  {{ ($post->is_published == true) ? 'Yes' : 'No' }}
 				</td>
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium">
