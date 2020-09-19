@@ -9,13 +9,13 @@
       <div class="grid grid-cols-6 gap-6">
 
         <x-input.text
-          class="col-span-4"
+          class="col-span-6 md:col-span-4"
           name="email"
           title="E-Mail address"
         />
 
         <x-input.text
-          class="col-span-4"
+          class="col-span-6 md:col-span-4"
           name="password"
           title="Password"
           type="password"
