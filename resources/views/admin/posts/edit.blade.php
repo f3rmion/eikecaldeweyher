@@ -10,40 +10,40 @@
       <div class="grid grid-cols-6 gap-6">
 
         <x-input.text
-          class="col-span-4"
+          class="col-span-6 md:col-span-4"
           name="title"
           title="Title"
 		  value="{{ $post->title }}"
         />
 
-        <div class="col-span-4">
+        <div class="col-span-6 md:col-span-4">
 			<label for="Authors" class="block text-sm font-medium leading-5 text-gray-700">Body</label>
 			@trix($post, 'body', ['hideButtonIcons' => 'attach'])
 		</div>
 
-        <div class="col-span-4">
+        <div class="col-span-6 md:col-span-4">
 			<label for="Authors" class="block text-sm font-medium leading-5 text-gray-700">Authors</label>
 			@livewire('author-select', ['authors' => $post->authors ?? ['']])
 		</div>
 
-        <div class="col-span-4">
+        <div class="col-span-6 md:col-span-4">
 			<label for="Tags" class="block text-sm font-medium leading-5 text-gray-700">Category</label>
 			<livewire:category-select :categories="$post->category()->pluck('name')->toArray()"/>
 		</div>
 
-        <div class="col-span-4">
+        <div class="col-span-6 md:col-span-4">
 			<label for="Tags" class="block text-sm font-medium leading-5 text-gray-700">Tags</label>
 			<livewire:tag-select :tags="$post->tags()->pluck('name')->toArray()"/>
 		</div>
 
         <x-input.text
-          class="col-span-4"
+          class="col-span-6 md:col-span-4"
           name="doi"
           title="DOI"
 		  value="{{ $post->doi }}"
         />
 
-		<div class="col-span-4">
+		<div class="col-span-6 md:col-span-4">
 		  <label class="block text-sm font-medium leading-5 text-gray-700 mb-1" for="cover">Cover</label>
 			  <input
 			  id="cover"

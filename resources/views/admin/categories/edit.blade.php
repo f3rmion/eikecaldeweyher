@@ -10,7 +10,7 @@
       <div class="grid grid-cols-6 gap-6">
 
         <x-input.text
-          class="col-span-4"
+          class="col-span-6 md:col-span-4"
           name="name"
           title="Name"
 		  value="{{ $category->name }}"
