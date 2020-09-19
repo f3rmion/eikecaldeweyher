@@ -39,7 +39,7 @@
 		  @forelse ($posts as $post)
 			  <tr class="bg-white">
 				<td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-				  {!! \Illuminate\Support\Str::limit($post->title, 30, '...') !!}
+				  {!! \Illuminate\Support\Str::limit($post->title, 15, '...') !!}
 				</td>
 				<td class="hidden md:visible px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
 				  {{ $post->user->name }}
