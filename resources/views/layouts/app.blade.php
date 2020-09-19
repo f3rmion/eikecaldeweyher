@@ -26,7 +26,7 @@
 						<img src="/logo.png">
 					</div>
 				</a>	
-				<ul class="flex text-2xl md:text-base text-gray-600 ml-0 lg:ml-16 space-x-8 mt-6 lg:mt-0">
+				<ul class="flex text-xl md:text-base text-gray-600 ml-0 lg:ml-16 space-x-8 mt-6 lg:mt-0">
 					<li><a href="{{ route('research.index') }}">R&D</a></li>
 					<li><a href="{{ route('imprint') }}">Imprint</a></li>
 					<li>
