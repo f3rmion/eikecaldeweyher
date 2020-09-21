@@ -2,9 +2,9 @@
 
 @section('content')
 	<div class="container mx-auto px-4">
-		<div class="text-indigo-600 leading-4 mb-12 md:mb-6 uppercase font-semibold">
-		<a href="{{ route('research.index') }}">research and development /</a>
-		</div>
+		<h2 class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+			<a href="{{ route('research.index') }}">Research and Development /</a>
+		</h2>		
 		<div class="post-details pb-12 flex flex-col lg:flex-row">
 			<div class="flex-none">
 				<img src="{{ $post->imageUrl() }}" alt="cover" class="rounded object-contain h-64 w-64">
