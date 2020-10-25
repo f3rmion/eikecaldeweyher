@@ -39,7 +39,7 @@ The published post is now visible under ``/research``. Furthermore, each post ha
 to its detail page (e.g., ``/research/9m53vz2zo``). 
 
 You can modify the settings for the hash-id in the ``config/hashid.php`` file
-where you can choose your personal [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)) as well as the lengths of the hash (default: ``9``) and the alphabet (default: ``abcdefghijklmnopqrstuvwxyz0123456789``) used to create the hash-id.
+where you can define your personal [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)) as well as the length of the hash (default: ``9``) and the alphabet (default: ``abcdefghijklmnopqrstuvwxyz0123456789``) used to create the hash-id.
 
 Edit
 ----
