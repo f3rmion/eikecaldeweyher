@@ -45,6 +45,10 @@ Edit
 ----
 Once you created a post, you can edit each post under ``/posts`` using the ``Edit`` button next to its title.
 
+Delete
+------
+Delete a post under ``/posts`` using the ``Delete`` button (be careful because there is no confirmation implemented so far).
+
 # Categories
 
 Create
@@ -55,6 +59,11 @@ Edit
 ----
 Once you created a category, you can edit each category under ``/categories`` using the ``Edit`` button next to its title.
 
+Delete
+------
+Delete a category under ``/categories`` using the ``Delete`` button (be careful because there is no confirmation implemented so far).
+Furthermore, this may cause a cascade deletion of several posts.
+
 # Tags
 
 Create
@@ -64,3 +73,8 @@ Click on the ``New Tag`` button to create a new tag (``/tags/create``).
 Edit
 ----
 Once you created a tag, you can edit each tag under ``/tags`` using the ``Edit`` button next to its title.
+
+Delete
+------
+Delete a tag under ``/tags`` using the ``Delete`` button (be careful because there is no confirmation implemented so far).
+Furthermore, this may cause a cascade deletion of several posts.
