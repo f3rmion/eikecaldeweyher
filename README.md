@@ -4,7 +4,7 @@ A minimalistic blog system to present your own research and development.
 The blog system is built with the Laravel Framework and the design is created with Tailwind CSS (live demo: [eikecaldeweyher.de](https://eikecaldeweyher.de)).
 
 <div align="center">
-<img src="./public/logo.png" alt="ec-logo" width="300">
+<img src="./public/logo.png" alt="ec-logo" width="250">
 </div>
 
 # Installation
@@ -15,7 +15,7 @@ Once you managed to install the blogsystem, you can login into the admin panel u
 After a successful login, you will be redirected to the ``/home`` screen that shows the count of posts, categories, and tags.
 
 <div align="center">
-<img src="./public/home_screen.png" alt="home" width="300">
+<img src="./public/home_screen.png" alt="home" width="500">
 </div>
 
 # Posts
@@ -26,7 +26,7 @@ Click on the ``New Post`` button under ``/posts`` to create a new post (``/posts
 On this page enter the details of your scientific achievment (title, abstract (body), authors, categories, tags, DOI, cover).
 
 <div align="center">
-<img src="./public/create-post_screen.png" alt="create-post" width="300">
+<img src="./public/create-post_screen.png" alt="create-post" width="500">
 </div>
 
 Please note that you have to create categories and tags beforehand, such that you can use them here.
