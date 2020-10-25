@@ -63,4 +63,4 @@ Click on the ``New Tag`` button to create a new tag (``/tags/create``).
 
 Edit
 ----
-Once you created a post, you can edit each tag under ``/posts`` using the ``Edit`` button next to its title.
+Once you created a tag, you can edit each tag under ``/tags`` using the ``Edit`` button next to its title.
