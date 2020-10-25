@@ -23,7 +23,7 @@ After a successful login, you will be redirected to the ``/home`` screen that sh
 Create
 -----
 Click on the ``New Post`` button under ``/posts`` to create a new post (``/posts/create``).
-On this page enter the details of your scientific achievment (title, abstract (termed body using a WYSIWYG editor), authors, categories, tags, DOI, cover).
+On this page enter the details of your scientific achievment (title, abstract (termed body using a WYSIWYG editor), authors (livewire component), categories (dropdown), tags (livewire component), DOI (optional), cover).
 
 <div align="center">
 <img src="./public/create-post_screen.png" alt="create-post" width="700">
