@@ -1,16 +1,21 @@
-# Modern blogsystem for scientists
+# Minimalistic blogsystem for scientists
 
-A simple blog system to present your own scientific articles and development. 
+A minimalistic blog system to present your own research and development. 
 The blog system is built with the Laravel Framework and the design is created with Tailwind CSS.
 
-[![Live demo](https://eikecaldeweyher.de)](https://eikecaldeweyher.de)
+<div align="center">
+<img src="./public/logo.png" alt="ec-logo" width="300">
+</div>
+
+![Live demo](https://eikecaldeweyher.de)
 
 # Posts
 
 Create
 -----
 Click on the ``New Post`` button under ``/posts`` to create a new post (``/posts/create``).
-On this page enter the details of your scientific achievment (title, abstract, authors, categories, tags, DOI, cover).
+On this page enter the details of your scientific achievment (title, abstract (body), authors, categories, tags, DOI, cover).
+
 Please note that you have to create categories and tags beforehand, such that you can use them here.
 
 (Un)publish
