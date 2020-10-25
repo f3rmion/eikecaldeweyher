@@ -1,13 +1,14 @@
 # Minimalistic blogsystem for scientists
 
 A minimalistic blog system to present your own research and development. 
-The blog system is built with the Laravel Framework and the design is created with Tailwind CSS.
+The blog system is built with the Laravel Framework and the design is created with Tailwind CSS (live demo: [eikecaldeweyher.de](https://eikecaldeweyher.de)).
 
 <div align="center">
 <img src="./public/logo.png" alt="ec-logo" width="300">
 </div>
 
-![Live demo](https://eikecaldeweyher.de)
+# Installation
+tba
 
 # Posts
 
