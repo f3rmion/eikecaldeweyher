@@ -21,12 +21,13 @@ Please note that you have to create categories and tags beforehand, such that yo
 
 (Un)publish
 -----------
-Publish your added article under ``/posts`` using the ``Publish/Unpublish`` button.
+Publish your added post under ``/posts`` using the ``Publish/Unpublish`` button.
+The published post is now visible under ``/research``. Furthermore, each post has a unique hash-id that leads
+to its detail page (e.g., ``/research/9m53vz2zo``).
 
 Edit
 ----
 Once you created a post, you can edit each post under ``/posts`` using the ``Edit`` button next to its title.
-
 
 # Categories
 
@@ -36,8 +37,7 @@ Click on the ``New Category`` button to create a new category (``/categories/cre
 
 Edit
 ----
-Once you created a category, you can edit each category under ``/posts`` using the ``Edit`` button next to its title.
-
+Once you created a category, you can edit each category under ``/categories`` using the ``Edit`` button next to its title.
 
 # Tags
 
@@ -48,7 +48,3 @@ Click on the ``New Tag`` button to create a new tag (``/tags/create``).
 Edit
 ----
 Once you created a post, you can edit each tag under ``/posts`` using the ``Edit`` button next to its title.
-
-
-
-
