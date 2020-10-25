@@ -53,7 +53,7 @@ Delete a post under ``/posts`` using the ``Delete`` button (be careful because t
 
 Create
 ------
-Click on the ``New Category`` button to create a new category (``/categories/create``).
+Under ``/categories`` click on the ``New Category`` button to create a new category (``/categories/create``).
 
 Edit
 ----
@@ -68,7 +68,7 @@ Furthermore, this may cause a cascade deletion of several posts.
 
 Create
 ------
-Click on the ``New Tag`` button to create a new tag (``/tags/create``).
+Under ``/tags`` click on the ``New Tag`` button to create a new tag (``/tags/create``).
 
 Edit
 ----
