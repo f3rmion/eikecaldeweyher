@@ -18,6 +18,8 @@ After a successful login, you will be redirected to the ``/home`` screen that sh
 <img src="./public/home_screen.png" alt="home" width="700">
 </div>
 
+When you want to logout simply click on ``Logout`` within the navbar.
+
 # Posts
 
 Create
