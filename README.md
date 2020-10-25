@@ -36,7 +36,7 @@ Please note that you have to create categories and tags beforehand, such that yo
 Publish your added post under ``/posts`` using the ``Publish/Unpublish`` button.
 The published post is now visible under ``/research``. Furthermore, each post has a unique hash-id that leads
 to its detail page (e.g., ``/research/9m53vz2zo``). You can modify the settings for the hash-id in the ``config/hashid.php`` file
-where you can choose your personal [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)) as well as the lengths of the hash and the alphabet used to create the hash-id.
+where you can choose your personal [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)) as well as the lengths of the hash (default: ``9``) and the alphabet (default: ``abcdefghijklmnopqrstuvwxyz0123456789``) used to create the hash-id.
 
 Edit
 ----
