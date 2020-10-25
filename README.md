@@ -29,7 +29,8 @@ On this page enter the details of your scientific achievment (title, abstract (t
 <img src="./public/create-post_screen.png" alt="create-post" width="700">
 </div>
 
-Please note that you have to create categories and tags beforehand, such that you can use them here.
+
+Please note that you have to create categories and tags beforehand, otherwise you won't pass the validation when submitting the create request.
 
 (Un)publish
 -----------
