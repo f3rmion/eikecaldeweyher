@@ -25,7 +25,7 @@ When you want to logout simply click on ``Logout`` within the navbar.
 Create
 -----
 Click on the ``New Post`` button under ``/posts`` to create a new post (``/posts/create``).
-On this page enter the details of your scientific achievment (title, abstract (termed body using a WYSIWYG editor), authors (livewire component), categories (dropdown), tags (livewire component), DOI (optional), cover).
+On this page enter the details of your scientific achievment (title, body (WYSIWYG editor), authors (livewire component), categories (dropdown), tags (livewire component), DOI (optional), cover).
 
 <div align="center">
 <img src="./public/create-post_screen.png" alt="create-post" width="700">
