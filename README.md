@@ -80,3 +80,18 @@ Delete
 ------
 Delete a tag under ``/tags`` using the ``Delete`` button (be careful because there is no confirmation implemented so far).
 Furthermore, this may cause a cascade deletion of several posts.
+
+
+# Research
+
+Index
+-----
+Under ``/research`` all published posts are visible to anybody.
+
+<div align="center">
+<img src="./public/research_screen.png" alt="research-index" width="700">
+</div>
+
+Detail
+------
+Every published post has its own detail page (see above for details).
