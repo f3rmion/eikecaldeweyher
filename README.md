@@ -1,9 +1,4 @@
 # Minimalistic responsive blogsystem for scientists
-
-<div align="center">
-<img src="./public/logo.png" alt="ec-logo" width="150">
-</div>
-
 A minimalistic responsive blog system to present your research and development. 
 The blog system is built with the Laravel Framework and the design is created with Tailwind CSS (live demo: [eikecaldeweyher.de](https://eikecaldeweyher.de)).
 
