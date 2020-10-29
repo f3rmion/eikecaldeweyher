@@ -2,8 +2,28 @@
 A minimalistic responsive blog system to present your research and development. 
 The blog system is built with the Laravel Framework and the design is created with Tailwind CSS (live demo: [eikecaldeweyher.de](https://eikecaldeweyher.de)).
 
-# Installation
-tba
+## Installation
+
+This software makes use of the [Laravel](https://laravel.com/) Framework. Everything needed for running this project in production is included in this repository.
+
+PHP 7.3+ and a SQL server is required. We suggest to use MySQL for this project, because everything was tested with this dbms.
+
+After moving the project to a server, it can be installed with all dependencies with:
+
+    $ composer install
+    $ npm install && npm run dev
+
+### Configuration
+
+The whole project can be configured over a `.env` file which is loaded by Laravel automatically. The `.env.sample` can be copied and adjusted. A database has to be created before and the credentials have to be put in the `.env` file.
+
+### Database migrations
+
+To setup the database, run the migration command:
+
+    $ php artisan migrate
+
+This will create all needed tables.
 
 # Login
 Once you managed to install the blogsystem, you can login into the admin panel under ``/login``.
