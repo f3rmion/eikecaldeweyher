@@ -1,6 +1,5 @@
 # Minimalistic responsive blogsystem for scientists
-A minimalistic responsive blog system to present your research and development. 
-The blog system is built with the Laravel Framework and the design is created with Tailwind CSS (live demo: [eikecaldeweyher.de](https://eikecaldeweyher.de)).
+A minimalistic responsive blog system to present your research and development (live demo: [eikecaldeweyher.de](https://eikecaldeweyher.de)).
 
 ## Installation
 
