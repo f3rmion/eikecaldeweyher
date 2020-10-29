@@ -1,7 +1,7 @@
 # Minimalistic responsive blogsystem for scientists
 A minimalistic responsive blog system to present your research and development (live demo: [eikecaldeweyher.de](https://eikecaldeweyher.de)).
 
-## Installation
+# Installation
 
 This software makes use of the [Laravel](https://laravel.com/) Framework. Everything needed for running this project in production is included in this repository.
 
@@ -12,11 +12,11 @@ After moving the project to a server, it can be installed with all dependencies 
     $ composer install
     $ npm install && npm run dev
 
-### Configuration
+## Configuration
 
 The whole project can be configured over a `.env` file which is loaded by Laravel automatically. The `.env.sample` can be copied and adjusted. A database has to be created before and the credentials have to be put in the `.env` file.
 
-### Database migrations
+## Database migrations
 
 To setup the database, run the migration command:
 
