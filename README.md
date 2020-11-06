@@ -24,8 +24,8 @@ To setup the database, run the migration command:
 
 This will create all needed tables.
 
-## Use disk for image storage
-In order to save cover images and make them available to the public use a new disk
+## Coverimage storage
+In order to save coverimages and make them available to the public use a new disk
 
 ```bash
 mkdir storage/app/covers
