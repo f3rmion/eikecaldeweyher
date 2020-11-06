@@ -24,6 +24,18 @@ To setup the database, run the migration command:
 
 This will create all needed tables.
 
+## Use disk for image storage
+In order to get our images available to public we use a new disk
+
+```bash
+mkdir storage/app/covers
+```
+and set the synlinks properly by
+
+```bash
+php artisan storage:link
+```
+
 # Login
 Once you managed to install the blogsystem, you can login into the admin panel under ``/login``.
 After a successful login, you will be redirected to the ``/home`` screen that shows the count of posts, categories, and tags.
