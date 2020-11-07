@@ -25,7 +25,7 @@ To setup the database, run the migration command:
 This will create all needed tables.
 
 ## Coverimage storage
-In order to save coverimages and make them available to the public use a new disk
+In order to save coverimages and make them available to the public use a new disk (defined in ``config/filesystem.php``)
 
 ```bash
 mkdir storage/app/covers
