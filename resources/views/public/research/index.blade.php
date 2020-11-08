@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container mx-auto pl-4 lg:p-4 lg:p-0">
-	<nav class="flex mb-8" aria-label="Breadcrumb">
+	<nav class="flex mb-4" aria-label="Breadcrumb">
 	  <ol class="bg-white rounded-md shadow px-6 flex space-x-4">
 		<li class="flex">
 		  <div class="flex items-center">
