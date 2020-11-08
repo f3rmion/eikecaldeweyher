@@ -1,4 +1,6 @@
 # Minimalistic responsive blogsystem for scientists
+[![License](https://img.shields.io/github/license/f3rmion/eikecaldeweyher)](https://github.com/f3rmion/eikecaldeweyher/blob/master/COPYING)
+
 A minimalistic responsive blog system to present your research and development (live demo: [eikecaldeweyher.de](https://eikecaldeweyher.de)).
 
 # Installation
