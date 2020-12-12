@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container mx-auto px-2">
+<div class="container mx-auto pl-4 lg:p-4 lg:p-0">
 
 <!-- This component requires Tailwind CSS >= 1.5.1 and @tailwindcss/ui >= 0.4.0 -->
 <div class="bg-white overflow-hidden">
