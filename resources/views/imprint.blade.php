@@ -6,7 +6,7 @@
 	<div class="w-full lg:w-1/2 mt-8 bg-gray-100 leading-6 p-4">
 		Eike Caldeweyher<br>
 		Blågatan 43<br>
-		421 65 <br>
+		421 65 Västra Frölunda<br>
 		Sweden<br><br>
 		Contact: hello at eikecaldeweyher.de
 	</div>
