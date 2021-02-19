@@ -42,6 +42,8 @@
 				</ul>
 				@includeWhen(Auth::user(), 'layouts._admin_menu')
 			</div>
+
+			@livewire('search-dropdown')
 		</nav>
 	</header>
 
